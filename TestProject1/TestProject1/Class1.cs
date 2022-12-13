@@ -10,7 +10,7 @@ namespace TestProject1
     class LoginPage
     {
         IWebDriver driver = new ChromeDriver();
-        
+
         [Test]
         public void Login()
         {
