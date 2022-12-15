@@ -36,16 +36,15 @@ namespace TestProject1
             driver.Manage().Window.Maximize();
 
 
-            driver.FindElement(By.Id("username")).SendKeys("tamara.mitrovic");
+            driver.FindElement(By.Id("username")).SendKeys("nenad.antonic@live.com");
 
-            driver.FindElement(By.Id("password")).SendKeys("tamara.mitrovic");
+            driver.FindElement(By.Id("password")).SendKeys("klasikaK1-");
 
             driver.FindElement(By.Id("loginbtn")).Click();
 
-            var stranica = driver.FindElement(By.XPath("/html/body/header/nav/div/div/div/div/div[1]/div[1]/ul/li/a"));
+            var stranica = driver.FindElement(By.XPath("//*[contains(text(), 'Moji kursevi')]"));
             Assert.NotNull(stranica);
-
-
+            
 
         }
     }
